@@ -1,0 +1,5 @@
+#!/bin/bash
+set -eu -o pipefail
+
+cd lib
+g++ -O3 -DNDEBUG -shared -o ../qpbo/libqpbo.so c_qpbo.cpp qpbo/*.cpp
